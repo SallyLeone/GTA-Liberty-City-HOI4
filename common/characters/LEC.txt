@@ -1,0 +1,29 @@
+characters={
+    ### Country Leaders ###
+	LEC_salvatore_leone = {
+		name = LEC_salvatore_leone
+		gender = male
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/LEC/LEC_salvatore_leone.dds"
+			}
+            army = {
+				large = "gfx/leaders/LEC/LEC_salvatore_leone.dds"
+			}
+		}
+		country_leader = {
+			traits = {  }
+			ideology = cartel_rule
+			expire = "2900.1.1.1"
+			id = -1
+		}
+        corps_commander = {
+			traits = {  } 
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}

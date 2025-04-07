@@ -1,0 +1,25 @@
+state={
+	id=227
+	name="STATE_227"
+	provinces={
+		12142 
+	}
+	history={
+		owner = FRA
+		add_core_of = FRA
+		#add_core_of = TNY
+		#add_core_of = NYC
+
+		victory_points = {
+			12142 20 #Staten Island
+		}
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 3
+		}
+	}
+
+ state_category=city
+ manpower=474893
+	buildings_max_level_factor=1.000
+}

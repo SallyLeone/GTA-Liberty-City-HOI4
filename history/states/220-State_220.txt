@@ -1,0 +1,29 @@
+state={
+	id=220
+	name="STATE_220"
+	provinces={
+		2699 
+	}
+	history={
+		owner = LEC
+		add_core_of = FRA
+	    add_core_of = LEC
+                victory_points = { #Yonkers
+                    2699 40
+                 }
+                 buildings = {
+			infrastructure = 10
+			industrial_complex = 6
+			arms_factory = 4
+			dockyard = 1
+
+			2699 = {
+				naval_base = 6
+			}
+                 }
+	}
+
+ state_category=large_city
+ manpower=1415000 #-20000 Turkish march
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,410 @@
+﻿focus_tree = {
+	id = generic_focus
+	country = {
+		factor = 1
+	}
+	default = yes
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 3000 }
+
+    ###Cartel
+
+	focus = {
+		id = empire_of_vice
+		icon = GFX_goal_unknown
+		cost = 1
+		x = 5
+		y = 0
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = secure_cartel_rule
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -5
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = empire_of_vice
+		prerequisite = {
+			focus = empire_of_vice
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = loyality_in_the_cartel
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = secure_cartel_rule
+		prerequisite = {
+			focus = secure_cartel_rule
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = a_government_of_paranoia
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		mutually_exclusive = { 
+			focus = cartel_trust
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = loyality_in_the_cartel
+		prerequisite = {
+			focus = loyality_in_the_cartel
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = cartel_trust
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		mutually_exclusive = { 
+			focus = a_government_of_paranoia
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = loyality_in_the_cartel
+		prerequisite = {
+			focus = loyality_in_the_cartel
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = unity_in_crime
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = cartel_trust
+		prerequisite = {
+			focus = cartel_trust
+			focus = a_government_of_paranoia
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = clean_the_cities
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = secure_cartel_rule
+		prerequisite = {
+			focus = secure_cartel_rule
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = violent_means
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		mutually_exclusive = { 
+			focus = civilian_cooporation
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = clean_the_cities
+		prerequisite = {
+			focus = clean_the_cities
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = civilian_cooporation
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		mutually_exclusive = { 
+			focus = violent_means
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = clean_the_cities
+		prerequisite = {
+			focus = clean_the_cities
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = establish_a_cartel_government
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = civilian_cooporation
+		prerequisite = {
+			focus = civilian_cooporation
+			focus = violent_means
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = legitimize_our_control
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = establish_a_cartel_government
+		prerequisite = {
+			focus = establish_a_cartel_government
+		}
+		prerequisite = {
+			focus = unity_in_crime
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = winning_the_war
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 5
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = empire_of_vice
+		prerequisite = {
+			focus = empire_of_vice
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = expand_recruitment
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 3
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = winning_the_war
+		prerequisite = {
+			focus = winning_the_war
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = embrace_cartel_drug_use
+		icon = GFX_goal_unknown
+		cost = 5
+		mutually_exclusive = { 
+			focus = anti_cartel_drug_use_initiatives
+		}
+		x = 1
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = expand_recruitment
+		prerequisite = {
+			focus = expand_recruitment
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = the_german_example
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = embrace_cartel_drug_use
+		prerequisite = {
+			focus = embrace_cartel_drug_use
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = anti_cartel_drug_use_initiatives
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		mutually_exclusive = { 
+			focus = embrace_cartel_drug_use
+		}
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = expand_recruitment
+		prerequisite = {
+			focus = expand_recruitment
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = focus_on_the_objective
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = anti_cartel_drug_use_initiatives
+		prerequisite = {
+			focus = anti_cartel_drug_use_initiatives
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = fo
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = focus_on_the_objective
+		prerequisite = {
+			focus = focus_on_the_objective
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = the_drug_trade
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -3
+		y = 1
+		select_effect = {  }
+		allow_branch = {
+		}
+		available = {
+		}
+		relative_position_id = winning_the_war
+		prerequisite = {
+			focus = winning_the_war
+		}
+		completion_reward = {
+
+		}
+	}
+}
